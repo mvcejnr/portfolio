@@ -1,0 +1,265 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.144)), 
+    url(./assets/background.image/mvcee1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+
+.fade2 {
+    position: fixed; /* Make it fixed to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    pointer-events: none; 
+    transition: opacity 0.5s ease;
+    z-index: 0; /* Set a lower z-index */
+}
+
+.content {
+    position: relative; /* Ensure content stays above the fade */
+    z-index: 1; /* Set a higher z-index for content */
+}
+
+
+.navbar{
+    height: 30px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-family: "Luckiest Guy", cursive;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu  li {
+    margin-left: 10px;
+}
+
+.menu  a {
+    text-decoration: none;
+    padding: 5px 5px;
+    color: white;
+}
+
+
+
+.features-header,
+.singles-header{
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    top: 20px;
+    margin-top: 100px;
+}
+
+.singles-column,
+.features-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.singles-box,
+.feature-box {
+    width: 200px; 
+    margin: 20px; 
+    text-align: center;
+}
+
+.singles-box img,
+.feature-box img {
+    max-width: 100%;  
+    height: auto;     
+    display: block;   
+}
+
+.singles-box h2,
+.singles-box p,
+.singles-box a {
+    margin-bottom: -5px;
+    margin-top: 0;
+}
+
+.feature-box h2,
+.feature-box p,
+.feature-box a {
+    margin-bottom: -5px;
+    margin-top: 0;
+}
+
+.singles-box a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+}
+
+.singles-box a:hover{
+    opacity: 1;
+    transition: 0.6s ease;
+}
+
+.feature-box a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+}
+
+.feature-box a:hover{
+    opacity: 1;
+    transition: 0.6s ease;
+}
+
+
+footer{
+    color: white; 
+    padding: 20px 0; 
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.social-icons a{
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 2s;
+}
+
+.social-icons a:hover{
+    color: #868686;
+}
+
+.footer-nav{
+    margin-bottom: 15px;
+}
+
+.footer-nav ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.footer-nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerbottom span{
+    color: #8b8b8b;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+
+    .content{
+        margin: 60px;
+    }
+
+    .features-header,
+    .singles-header{
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    top: 20px;
+    margin-top: 125px;
+    }
+
+    .singles-box,
+    .feature-box {
+    width: 350px; 
+    margin: 20px; 
+    text-align: center;
+    }
+
+}
+
+
+@media (min-width: 900px) and (max-width: 1279px) {
+    .content{ margin: 100px;
+    }
+
+    .features-header,
+    .singles-header{
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    top: 20px;
+    margin-top: 125px;
+    }
+
+    .singles-box,
+    .feature-box {
+    width: 350px; 
+    margin: 20px; 
+    text-align: center;
+    }
+
+    .navbar{
+        height: 50px;
+    }
+}
+
+
+@media only screen and (min-width: 1280px){
+    .content{ margin: 170px;
+    }
+
+    .features-header,
+    .singles-header{
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    top: 20px;
+    margin-top: 125px;
+    }
+
+    .singles-box,
+    .feature-box {
+    width: 350px; 
+    margin: 20px; 
+    text-align: center;
+    }
+
+    .navbar{
+        height: 50px;
+    }
+}
