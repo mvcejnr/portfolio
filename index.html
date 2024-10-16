@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MvceJnr</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="./index.html">MaceJnr</a>
+        </div>
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="./music.html">Music</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+    </nav>
+
+    <div class="content">
+        <div class="about">
+            <div class="header-text">
+                <h1 class="introduction"> Hi!, I'm <br><span class="mvce">Mvce</span></h1>
+                <p class="pronounced"> pronounced /meɪs/. </p>
+            </div>
+        </div>
+
+        <div class="h2-text">
+            <h2 id="about">About Mvce</h2>
+            <p> Nulla vulputate nisl a faucibus tempor. Etiam gravida nulla id hendrerit pellentesque.
+                Praesent lacinia nulla lacus, sed laoreet enim dignissim id. Cras nec enim at tellus 
+                tincidunt consectetur. Etiam ultrices sed tellus ac aliquet. In lorem ligula, porta in urna id,
+                pulvinar hendrerit felis. Aliquam et malesuada nulla. Curabitur a volutpat erat. Phasellus blandit,
+                orci in fermentum ultricies, nibh ex maximus velit, vel aliquet urna diam sed felis.
+                Curabitur ullamcorper leo mi, id aliquam orci porttitor at. Vivamus sed vulputate dolor.
+                Nunc non mi eu orci suscipit blandit. Fusce iaculis, nibh sed pretium tristique, eros 
+                lacus finibus ante, in placerat orci eros nec lacus. Vestibulum quis auctor lectus. </p>
+        </div>
+
+        <div class="boxes" id="box1">
+            <img src="./assets/info.boxes/IMG_0667.JPG" alt="content" class="fade">
+            <img src="./assets/info.boxes/aemz.jpg" alt="content" class="fade">
+            <img src="./assets/info.boxes/background4.jpg" alt="content" class="fade">
+        </div>
+
+        <div class="h2-text">
+            <h2> Artistry</h2>
+            <p> Nulla vulputate nisl a faucibus tempor. Etiam gravida nulla id hendrerit pellentesque.
+                Praesent lacinia nulla lacus, sed laoreet enim dignissim id. Cras nec enim at tellus 
+                tincidunt consectetur. Etiam ultrices sed tellus ac aliquet. In lorem ligula, porta in urna id,
+                pulvinar hendrerit felis. Aliquam et malesuada nulla. Curabitur a volutpat erat. Phasellus blandit,
+                orci in fermentum ultricies, nibh ex maximus velit, vel aliquet urna diam sed felis.
+                Curabitur ullamcorper leo mi, id aliquam orci porttitor at. Vivamus sed vulputate dolor.
+                Nunc non mi eu orci suscipit blandit. Fusce iaculis, nibh sed pretium tristique, eros 
+                lacus finibus ante, in placerat orci eros nec lacus. Vestibulum quis auctor lectus. </p>
+        </div>
+
+        <div class="boxes" id="box2">
+            <img src="./assets/info.boxes/concert 1.jpg" alt="content" class="fade">
+            <img src="./assets/info.boxes/loyle carner ⭐️.jpg" alt="content" class="fade">
+            <img src="./assets/info.boxes/tai concert.jpg" alt="content" class="fade">
+        </div>
+
+    </div>
+
+    <div class="fade2"></div>
+
+    
+    <section class="section ">
+        <h2> You're All Caught Up 😁</h2>
+    </section>
+
+    <section class="section ">
+        <h2> Stay up to date </h2>
+    </section>
+    
+    <section class="section ">
+        <h2> Follow my Socials </h2>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/bwuoymace/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bwuoymace/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.x.com/bwuoymace/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Our Team</a></li>
+            </ul>
+        </nav>
+
+        <div class="footerbottom">
+            <p>Copyright &copy; 2024; Designed by <span>David O. Iseghoede</span></p>
+        </div>
+
+    </footer>
+
+
+    <script>
+       function startImageTransition(boxId, interval) {
+        const images = document.querySelectorAll(`#${boxId} .fade`);
+        let currentIndex = 0;
+
+        function showNextImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+        }
+        images[currentIndex].classList.add('active');
+        setInterval(showNextImage, interval);
+        }
+         startImageTransition('box1', 4000); 
+         startImageTransition('box2', 6000); 
+
+
+         window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        const maxScroll = document.body.scrollHeight - window.innerHeight;
+        const opacity = Math.min(scrollY / maxScroll, 1);
+    
+        document.querySelector('.fade2').style.opacity = opacity;
+        });
+
+
+
+        const sections = document.querySelectorAll('.section');
+
+        const handleScroll = () => {
+        sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const inView = sectionTop < window.innerHeight && sectionTop >= 0;
+        
+        if (inView) {
+            section.classList.add('visible'); 
+        } else {
+            section.classList.remove('visible'); 
+        }
+        });
+        };
+
+
+        handleScroll();
+        window.addEventListener('scroll', handleScroll);
+
+
+
+       
+
+    </script>
+
+
+</body>
+</html>
